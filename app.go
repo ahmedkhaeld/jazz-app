@@ -44,7 +44,7 @@ func run() *application {
 		Handlers:   h,
 		Middleware: m,
 	}
-	app.Models = data.New(app.Jazz.DB.Pool)
+	app.Models = data.New(app.Jazz.DB.SqlPool)
 	app.Middleware.Models = app.Models
 	//add new routes with default ones
 	app.Jazz.Routes = app.routes()

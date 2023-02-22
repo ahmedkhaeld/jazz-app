@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/ahmedkhaled/jazz"
+	"github.com/ahmedkhaeld/jazz"
 	"myapp/data"
 )
 

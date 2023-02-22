@@ -1,7 +1,7 @@
 package handlers
 
 import (
-	"github.com/ahmedkhaled/jazz"
+	"github.com/ahmedkhaeld/jazz"
 	"myapp/data"
 	"net/http"
 	"time"
