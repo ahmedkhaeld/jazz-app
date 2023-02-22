@@ -1,0 +1,32 @@
+BINARY_NAME=jazzApp.exe
+
+## build: builds all binaries
+build:
+    @go mod vendor
+    @go build -o tmp/${BINARY_NAME} .
+	@echo Jazz built!
+
+run:
+	@echo Staring Jazz...
+    @start /min cmd /c tmp\${BINARY_NAME} &
+	@echo Jazz started!
+
+clean:
+	@echo Cleaning...
+	@DEL ${BINARY_NAME}
+	@go clean
+	@echo Cleaned!
+
+test:
+	@echo Testing...
+	@go test ./...
+	@echo Done!
+
+start: run
+
+stop:
+	@echo "Starting the front end..."
+	@taskkill /IM ${BINARY_NAME} /F
+	@echo Stopped Jazz
+
+restart: stop start

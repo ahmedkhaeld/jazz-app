@@ -1,0 +1,32 @@
+{{extends "./layouts/base.jet"}}
+
+{{block browserTitle()}}jAZZ{{end}}
+
+{{block css()}}
+
+{{end}}
+
+
+{{block pageContent()}}
+
+    <div class="col text-center">
+        <div class="d-flex align-items-center justify-content-center mt-5">
+            <div>
+                <img src="/public/images/saxophone.png" class="mb-5" style="width: 100px;height:auto;">
+                <h1>JAZZ</h1>
+                <hr>
+                <small class="text-muted">Go Jazz something awesome</small>
+
+            </div>
+        </div>
+
+        <hr>
+
+
+    </div>
+
+{{end}}
+
+{{block js()}}
+
+{{end}}
